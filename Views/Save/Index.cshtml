@@ -1,0 +1,21 @@
+﻿@model SaveVC
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="~/css/styles333.css" />
+    </head>
+    <body>
+        @foreach (var item in Model.Htmls)
+        {
+            <div>@item.Url</div>
+        }
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </body>
+</html>
+

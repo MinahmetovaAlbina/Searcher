@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(234, 234, 234, 0.97);
+}
+
+body {
+    background-color: rgba(255, 239, 213, 0);
+    margin: 0;
+    /*display: table;*/
+}
+
+    body h1 {
+        font-family: "Times New Roman", Times, serif;
+        /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+        font-weight: bold;
+    }
+
+    tbody {
+    background-color: rgba(255, 239, 213, 0);
+}
+
+#newbs {
+    /*background-color: rgba(28, 28, 28, 0.99);*/
+    background-color: rgba(41,0,102,.97);
+    border-left: 10px solid rgba(41,0,102,0.99);
+    border-right: 10px solid rgba(41,0,102,0.99);
+    border-radius: 15px 0px 0px 0px;
+    margin: 0 auto; /* Обнуляем значение отступов */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+    min-height: 333px;
+    max-height: 345px;
+    min-width: 100%;
+    max-width: 150%;
+    box-shadow: -0.4em -0.4em 7px rgba(226,226,226,0.21);
+    display: flex;
+    flex-wrap: nowrap;
+    /*flex-direction: column;*/
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#catalog {
+    /*background-color: rgba(255, 239, 213, 0.99);*/
+    margin: 0 auto; /* Обнуляем значение отступов */
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 5px;
+    min-height: 80%;
+    min-width: 100%;
+    overflow: auto;
+}
+
+#pcard {
+    position: relative;
+    display: inline-block; /* Отображать как строчный элемент */
+    background-color: rgba(255, 254, 244, 1);
+    border: 0px solid #000; /* Рамка вокруг текста */
+    border-radius: 0px 20px 20px 20px;
+    margin: 5px;
+    padding: 3px; /* Поля вокруг текста */
+    height: 310px;
+    width: 200px;
+    box-shadow: 0.4em 0.4em 7px rgba(122,122,122,0.17);
+    color: #330066;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+}
+
+#pcardNotA {
+    position: absolute;
+    background-color: rgba(234, 234, 234, 0.51);
+    border-radius: 0px 20px 20px 20px;
+    margin: 0 auto;
+    padding: 0;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#pcard:hover {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+
+#newbs #pcard {
+    flex: 0 0 auto;
+    margin-left: 0px;
+}
+
+#pimg {
+    position: absolute;
+    margin: 0 auto;
+    top: 10px;
+    left: 25px;
+    right: 25px;
+    border: none;
+    height: 150px;
+}
+
+#ptext {
+    position: absolute;
+    background-color: rgba(255, 239, 213, 0.99);
+    padding: 7px;
+    bottom: 0px;
+    left: 0px;
+    height: 130px;
+    width: 200px;
+    border-radius: 0px 0px 20px 20px;
+    color: #330066;
+}
+
+#pbut {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    height: 100px;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+}
+
+    #pbut:hover {
+        -webkit-transform: scale(1.07);
+        -moz-transform: scale(1.07);
+        -o-transform: scale(1.07);
+    }
+
+#pbutNotA {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    height: 100px;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+}
+
+#pbutNotA:hover {
+
+}
+
+#list {
+    background: white;
+    text-align: center;
+    border-radius: 17px 17px 17px 17px;
+    box-shadow: 0.1em 0.1em 11px rgba(41,0,102,.17);
+}
+
+    #list a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        transition: .3s ease-in-out;
+    }
+
+.logo1 {
+    color: #D5B45B;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    padding: 20px 0;
+}
+
+nav {
+    display: table;
+    margin: 0 auto;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topmenu > li {
+    width: 25%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    .topmenu > li > a {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #404040;
+        padding: 15px 30px;
+    }
+
+.topmenu li a:hover {
+    color: #D5B45B;
+}
+
+.submenu-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.submenu {
+    background: #273037;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+
+    .submenu a {
+        color: white;
+        text-align: left;
+        padding: 12px 15px;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .submenu li:last-child a {
+        border-bottom: none;
+    }
+
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+
+}
+.navbar-brand {
+    color: black;
+}
+
+#topbut {
+    width: 100px;
+    height: 20px;
+    background-color: rgba(41,0,102,.07);
+    border-radius: 10px 10px 10px 10px;
+}

@@ -1,0 +1,31 @@
+﻿@model ResultVS
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="~/css/styles333.css" />
+    </head>
+    <body>
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div >
+                <label asp-for="Domain" class="control-label">Domain</label>
+                <input asp-for="Domain" class="form-control" />
+                <span asp-validation-for="Domain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Show" class="btn btn-primary" />
+            </div>
+        </form>
+        <table cellspacing="1">
+            @foreach (var item in Model.htmls)
+            {
+                <tr><th>@item.Url</th><td>@item.Body</td></tr>
+            }
+        </table>
+    </body>
+</html>
+
